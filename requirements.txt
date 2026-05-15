@@ -19,3 +19,6 @@ opencv-python-headless
 tiktoken
 sentencepiece
 protobuf
+scikit-image
+pyyaml
+requests

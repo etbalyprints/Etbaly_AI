@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# This script runs every time your Studio sleeps, from your home directory.
+# Lightning AI Engine Auto-Stop Script
 
-# Logs from previous runs can be found in ~/.lightning_studio/logs/
+echo "🛑 Stopping Etbaly AI Engine..."
 
-# Add your shutdown commands below.
-#
-# Example: docker down my-container
-# Example: sudo service mysql stop
+# Find and kill the server process
+PIDS=$(ps aux | grep server_api.py | grep -v grep | awk '{print $2}')
+
+if [ -n "$PIDS" ]; then
+    kill $PIDS
+    echo "✅ AI Server stopped (PIDs: $PIDS)."
+else
+    echo "⚠️ No running server found."
+fi
