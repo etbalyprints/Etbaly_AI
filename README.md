@@ -30,8 +30,8 @@ This repository is configured to handle its own lifecycle within **Lightning AI 
 Since Lightning AI workspaces often contain pre-existing hidden configuration files, use this method to clear the root directory and clone the repo directly without creating a nested folder:
    
 ```bash
-# 0. (Optional) Delete all existing files and directories in the current root
-rm -rf ./* ./.* 2>/dev/null
+# 0. Safely delete specific old project files to avoid conflicts
+rm -rf .lightning_studio main.py
 
 # 1. Clone into a temporary folder
 git clone https://github.com/etbalyprints/Etbaly_AI temp_repo
