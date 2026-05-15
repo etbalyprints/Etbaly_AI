@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Logs
+server_unified.log
+*.log
+
+# AI Generated Artifacts
+output_shape.stl
+.triton/
+.cache/
+
+# IDEs and Tools
+.gemini
+.lightning_studio
+.vscode
+.idea
+.cursor-server
+.vscode-server
+.windsurf-server
+
+# System files
+.DS_Store
