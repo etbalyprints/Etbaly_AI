@@ -41,6 +41,9 @@ mv temp_repo/* temp_repo/.* . 2>/dev/null
 
 # 3. Clean up the empty temporary folder
 rm -rf temp_repo
+
+# 4. Start the server (handles dependencies and background launch)
+bash .lightning_studio/on_start.sh
 ```
 
 ### 2. Automated Provisioning
