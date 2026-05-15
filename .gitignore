@@ -20,7 +20,6 @@ output_shape.stl
 
 # IDEs and Tools
 .gemini
-.lightning_studio
 .vscode
 .idea
 .cursor-server
