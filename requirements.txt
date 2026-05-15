@@ -22,3 +22,4 @@ protobuf
 scikit-image
 pyyaml
 requests
+pymeshlab

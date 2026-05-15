@@ -10,7 +10,6 @@ venv/
 ENV/
 
 # Logs
-server_unified.log
 *.log
 
 # AI Generated Artifacts
